@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>토막시-이병률/청춘의 기습</title>
+
+  <style>
+
+    @font-face {
+    font-family: 'BookkMyungjo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/BookkMyungjo-Lt.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+
+    body {
+      background: black;
+      margin: 0;
+    }
+
+    h1{
+      color : white;
+      font-size: 25px;
+      font-family: 'BookkMyungjo';
+      font-weight: normal;
+      text-align: center;
+      margin: 20px;
+    }
+
+    .cards {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      padding: 100px;
+    }
+
+    .card {
+      width: 200px;
+      cursor: pointer;
+    }
+
+  p{
+      width :1000px;
+      padding:20px;
+      margin: 50px auto;
+
+
+      color : white;
+      font-size: 15px;
+      font-family: 'BookkMyungjo';
+      font-weight: normal;
+      text-align: left;
+      line-height: 1.8;
+         }
+
+  </style>
+
+</head>
+
+
+<body>
+
+  <h1> 청춘의 기습-이병률</h1>
+
+
+  //배경음악
+  <audio src="bgm.mp3" id="bgm" loop autoplay></audio>
+
+
+  //시집카드
+  <div class="cards">
+
+    <img src="A1.jpg" id="A1" class="card">
+    <img src="A2.jpg" id="A2" class="card">
+    <img src="A3.jpg" id="A3" class="card">
+    <img src="A4.jpg" id="A4" class="card">
+    <img src="A5.jpg" id="A5" class="card">
+
+
+
+  </div>
+
+  <p> <strong>청춘의 기습</strong>은 시인 이병률의 2017년 출간된 다섯 번째 시집 <strong>바다는 잘 있습니다</strong>에 수록된 작품입니다. 이병률은 1995년 등단 이후 사람,사랑,고독,여행과 같은 일상의 감정을 섬세하게 포착해온 시인이며, 이 시집에서는 혼자 자신을 들여다보는 동시에 타인과의 관계 속에서 '사람의 자리'를 묻습니다.<br>
+     <br> 
+  이 시 역시 이러한 시집의 흐름 안에서 청춘을 단순히 젊음의 시기가 아닌, 스스로에게 질문을 던지고 앞으로 나아가려는 순간으로 바라봅니다. 제목의 '기습'은 이러한 청춘이 예고 없이 마음속으로 들이닥치는 순간을 연상시키며, 이병률 특유의 담담하면서도 감각적인 언어를 통해 성장에 대한 질문, 망설임, 삶을 계속 나아가게 하는 마음으로 읽을 수 있습니다.</p>
+
+
+ //ASMR소리모음
+
+  <audio src="1_bus.wav" id="sound1" loop></audio>
+  <audio src="2_bird.mp3" id="sound2" loop></audio>
+  <audio src="3_gp.mp3" id="sound3" loop></audio>
+  <audio src="4_gp2.mp3" id="sound4" loop></audio>
+  <audio src="5_bird2.mp3" id="sound5" loop></audio>
+
+
+  <script>
+
+
+    let card1 = "no";
+
+    A1.onclick = function(){
+
+      bgm.play();
+
+      if(card1 == "no"){
+
+        A1.src = "A6.jpg";
+        sound1.play();
+        card1 = "yes";
+
+      }else if(card1 == "yes"){
+
+        A1.src = "A1.jpg";
+        sound1.pause();
+        card1 = "no";
+
+      }
+
+    }
+
+
+    let card2 = "no";
+
+    A2.onclick = function(){
+
+      bgm.play();
+
+      if(card2 == "no"){
+
+        A2.src = "A7.jpg";
+        sound2.play();
+        card2 = "yes";
+
+      }else if(card2 == "yes"){
+
+        A2.src = "A2.jpg";
+        sound2.pause();
+        card2 = "no";
+
+      }
+
+    }
+
+
+    let card3 = "no";
+
+    A3.onclick = function(){
+
+      bgm.play();
+
+      if(card3 == "no"){
+
+        A3.src = "A8.jpg";
+        sound3.play();
+        card3 = "yes";
+
+      }else if(card3 == "yes"){
+
+        A3.src = "A3.jpg";
+        sound3.pause();
+        card3 = "no";
+
+      }
+
+    }
+
+
+    let card4 = "no";
+
+    A4.onclick = function(){
+
+      bgm.play();
+
+      if(card4 == "no"){
+
+        A4.src = "A9.jpg";
+        sound4.play();
+        card4 = "yes";
+
+      }else if(card4 == "yes"){
+
+        A4.src = "A4.jpg";
+        sound4.pause();
+        card4 = "no";
+
+      }
+
+    }
+
+
+    let card5 = "no";
+
+    A5.onclick = function(){
+
+      bgm.play();
+
+      if(card5 == "no"){
+
+        A5.src = "A10.jpg";
+        sound5.play();
+        card5 = "yes";
+
+      }else if(card5 == "yes"){
+
+        A5.src = "A5.jpg";
+        sound5.pause();
+        card5 = "no";
+
+      }
+
+    }
+
+
+  </script>
+
+</body>
+
+</html>
